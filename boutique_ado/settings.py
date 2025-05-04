@@ -215,6 +215,13 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', '')
 STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 
+# Make logout work via GET request instead of confirmation screen
+ACCOUNT_LOGOUT_ON_GET = True
+
+# Redirect to home page after logout
+ACCOUNT_LOGOUT_REDIRECT_URL = '/'
+
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
